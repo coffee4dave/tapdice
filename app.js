@@ -9,6 +9,8 @@ let clicks = 0;
 window.onload = () => {
   console.log("loaded");
   console.log(p1.classList);
+  p1.classList.add("dice", "dice1");
+  p2.classList.add("dice", "dice1");
 };
 
 body.addEventListener("click", () => {
@@ -16,10 +18,8 @@ body.addEventListener("click", () => {
   p1.classList = "";
   p2.classList = "";
 
-  p1.classList.add("dice");
-  p1.classList.add("spin");
-  p2.classList.add("dice");
-  p2.classList.add("spin");
+  p1.classList.add("dice", "spin");
+  p2.classList.add("dice", "spin");
 
   let num1 = randNum(1, 6);
   console.log(num1);

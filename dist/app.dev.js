@@ -34,16 +34,21 @@ function spin() {
   p2.classList = "";
   p1.classList.add("dice", "spin");
   p2.classList.add("dice", "spin");
-
-  for (var i = 0; i < 10; i++) {
-    values.push(randNum(1, 6));
-    values.push(randNum(1, 6));
-    p1.classList.add("dice" + values[0]);
-    p2.classList.add("dice" + values[1]);
-  }
-
+  values[0] = randNum(1, 6);
+  values[1] = randNum(1, 6);
+  p1.classList.add("dice" + values[0]);
+  p2.classList.add("dice" + values[1]);
   return values;
-}
+} // (function myLoop(i) {
+//   setTimeout(function () {
+//     values[0] = (randNum(1, 6));
+//     values[1] = (randNum(1, 6));
+//     p1.classList.add("dice" + values[0]);
+//     p2.classList.add("dice" + values[1]); //  your code here                
+//     if (--i) myLoop(i); //  decrement i and call myLoop again if i > 0
+//   }, 50)
+// })(10);
+
 
 function randNum(base, limit) {
   return Math.floor(Math.random() * limit) + base;

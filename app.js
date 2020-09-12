@@ -4,17 +4,13 @@ const p1 = document.querySelector("#p1");
 const p2 = document.querySelector("#p2");
 const message = document.querySelector("#message");
 
-let clicks = 0;
-
 window.onload = () => {
   console.log("loaded");
-  console.log(p1.classList);
   p1.classList.add("dice", "dice1");
   p2.classList.add("dice", "dice1");
 };
 
 body.addEventListener("click", () => {
-  clicks++;
   p1.classList = "";
   p2.classList = "";
 
@@ -22,10 +18,10 @@ body.addEventListener("click", () => {
   p2.classList.add("dice", "spin");
 
   let num1 = randNum(1, 6);
-  console.log(num1);
+
   p1.classList.add("dice" + num1);
   let num2 = randNum(1, 6);
-  console.log(num2);
+
   p2.classList.add("dice" + num2);
 
   if (num1 > num2) {

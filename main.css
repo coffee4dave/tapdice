@@ -9,7 +9,6 @@
 
 html,
 body {
-  min-height: 400px;
   height: 100%;
   width: 100%;
 }
@@ -21,21 +20,20 @@ body {
 .container {
   margin: 0 auto;
   padding-top: 5%;
-  width: 40%;
   height: 100%;
 }
 
 h1,
 em {
   color: #69c195;
-  font-size: 3rem;
+  font-size: 6rem;
   text-align: center;
   text-shadow: 2px 3px 4px #000000;
 }
 
 h2 {
   color: #69c195;
-  font-size: 2rem;
+  font-size: 3rem;
   text-shadow: 2px 3px 1px #000000;
 }
 
@@ -52,12 +50,13 @@ h2 {
   position: relative;
   min-height: 200px;
   text-align: center;
+  padding: 10px;
 }
 
 .dice {
   margin-top: 15%;
-  min-width: 50px;
-  min-height: 50px;
+  width: 100px;
+  height: 100px;
   background-color: rgba(256, 256, 256, 0);
   justify-self: center;
   align-self: center;
@@ -65,42 +64,42 @@ h2 {
 }
 
 .dice1 {
-  background-image: url("../images/dice\ 1.png");
+  background-image: url("./images/dice\ 1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .dice2 {
-  background-image: url("../images/dice\ 2.png");
+  background-image: url("./images/dice\ 2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .dice3 {
-  background-image: url("../images/dice\ 3.png");
+  background-image: url("./images/dice\ 3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .dice4 {
-  background-image: url("../images/dice\ 4.png");
+  background-image: url("./images/dice\ 4.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .dice5 {
-  background-image: url("../images/dice\ 5.png");
+  background-image: url("./images/dice\ 5.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .dice6 {
-  background-image: url("../images/dice\ 6.png");
+  background-image: url("./images/dice\ 6.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
